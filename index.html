@@ -26,7 +26,12 @@
           Ultimately, the greatest lesson that COVID-19 can teach humanity is
           that we are all in this together.
         </h2>
-        <button class="advice-btn">Advice</button>
+        <button
+          class="advice-btn"
+          onclick="window.location = 'http://127.0.0.1:5500/index.html#advice-section'"
+        >
+          Advice
+        </button>
       </article>
       <figure class="hero-img">
         <img src="assets/levitate.svg" alt="girl levitating" />
@@ -34,13 +39,50 @@
     </main>
 
     <article class="main-footer">
-      <div class="confirmed"><h2>Confirmed: </h2><span>1,97,18,030</span></div>
-      <div class="recovered"><h2>Recovered: </h2><span>1,22,18,030</span></div>
+      <div class="confirmed">
+        <h2>Confirmed:</h2>
+        <span>1,97,18,030</span>
+      </div>
+      <div class="recovered">
+        <h2>Recovered:</h2>
+        <span>1,22,18,030</span>
+      </div>
     </article>
 
     <section id="advice-section">
-      
+      <article class="advice-container">
+        <ul class="advice-list">
+          <li>
+            Regularly and thoroughly clean your hands with an alcohol- based
+            hand rub or wash them with soap and water.
+          </li>
+          <li>
+            Maintain at least 1 metre (3 feet) distance between yourself and
+            others.
+          </li>
+          <li>
+            Avoid going to crowded places.
+          </li>
+          <li>
+            Avoid touching eyes, nose and mouth.
+          </li>
+        </ul>
+        <aside class="advice-side">
+          <ul>
+            <li>
+              Washing your hands with soap and water or using alcohol-based hand
+              rub kills viruses that may be on your hands.
+            </li>
+          </ul>
+        </aside>
+      </article>
     </section>
+
+    <section id="stats-section"></section>
+
+    <section id="faqs-section"></section>
+
+    <footer></footer>
 
     <script src="main.js"></script>
   </body>
