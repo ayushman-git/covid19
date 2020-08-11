@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar-buttons {
+  display: flex;
+  font-size: 1em;
+}
+
+.navbar-buttons li {
+ text-align: center;
+ padding: 0.5em 1em;
+  margin-left: 5em;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.navbar-buttons li:hover {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5em;
+}
+
+.hero-msg {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  flex: 0 1 40%;
+}
+
+.hero-msg h2 {
+  font-size: 2.5vw;
+  font-weight: 300;
+  line-height: 180%;
+}
+
+.hero-img {
+  flex: 0 1 60%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.advice-btn {
+  width: 50%;
+  height: 55px;
+  border: none;
+  background-color: #ffffff;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.advice-btn:hover {
+  color: white;
+  background-color: #000000;
+}
+
+.btn-bubble {
+  position: relative;
+  width: 0;
+  height: 0;
+  background-color: white;
+  animation: bubble 1s linear;
+  z-index: 2;
+}
+
+@keyframes bubble {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.confirmed,
+.recovered {
+  font-size: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 1 20%;
+}
