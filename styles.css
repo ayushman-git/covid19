@@ -20,7 +20,7 @@ html {
 
 .navbar {
   position: fixed;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.95);
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -151,9 +151,8 @@ html {
 .advice-list {
   display: flex;
   flex-flow: column wrap;
-  flex: 0 1 70%;
+  flex: 0 1 100%;
   padding-left: 0;
-  border-right: 1px solid rgb(236, 236, 236);
 }
 
 .advice-list li {
@@ -165,22 +164,52 @@ html {
 }
 
 .advice-list li:hover {
-  background-color: rgb(236, 236, 236);
-}
-
-.advice-side {
-  flex: 0 1 20%;
-}
-
-.advice-side li {
-  padding: 1em 0em;
-  list-style-type: none;
-  font-size: 1.5em;
-  line-height: 180%;
+  background-color: #fff1e7;
 }
 
 .divider {
   width: 100%;
   height: 2px;
-  background-color: rgb(236, 236, 236);
+  background: linear-gradient(45deg, #7145c2, #D76D77, #FFAF7B);
+  opacity: 0.5;
+}
+
+.advice-list header {
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.advice-list p {
+  font-size: 0.8em;
+}
+
+.advice-list article {
+  flex: 0 1 80%;
+}
+
+.advice-list li {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+  width: 190px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: border-radius 0.2s linear, background-color 0.2s linear;
+}
+
+.icon-container:hover {
+  border-radius: 30%;
+  background-color: #FFAF7B;
+}
+
+.icon-container img {
+  width: 90px;
 }
