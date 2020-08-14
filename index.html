@@ -41,11 +41,11 @@
     <article class="main-footer">
       <div class="confirmed">
         <h2>Confirmed:</h2>
-        <span>1,97,18,030</span>
+        <span class="hero-page-confirmed">1,97,18,030</span>
       </div>
       <div class="recovered">
         <h2>Recovered:</h2>
-        <span>1,22,18,030</span>
+        <span class="hero-page-recovered">1,22,18,030</span>
       </div>
     </article>
 
@@ -128,13 +128,9 @@
     <section id="stats-section">
       <article class="stats-container">
         <header class="dropdown-container">
-          <select id="countries" name="countries">
-            <option value="volvo">GLOBAL</option>
-            <option value="saab">USA</option>
-            <option value="fiat">China</option>
-            <option value="audi">Lebanon</option>
-          </select>
-          <input type="submit" />
+            <select id="countries" name="countries" onchange="countrySubmit()">
+              <option value="GLOBAL">Global</option>
+            </select>
         </header>
         <article>
           <aside class="stats">
