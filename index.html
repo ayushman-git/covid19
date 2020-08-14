@@ -13,8 +13,8 @@
         <li>
           <ul class="navbar-buttons">
             <li onclick="window.location = '/#advice-section'">Advice</li>
-            <li>Stats</li>
-            <li>FAQs</li>
+            <li onclick="window.location = '/#stats-section'">Stats</li>
+            <li onclick="window.location = '/#faqs-section'">FAQs</li>
           </ul>
         </li>
       </ul>
@@ -82,7 +82,10 @@
               </p>
             </article>
             <div class="icon-container">
-              <img src="./assets/icons/social-distance-2-meters.svg" alt="wash your hands" />
+              <img
+                src="./assets/icons/social-distance-2-meters.svg"
+                alt="wash your hands"
+              />
             </div>
           </li>
           <div class="divider"></div>
@@ -92,9 +95,10 @@
                 Avoid going to crowded places.
               </header>
               <p>
-                Where people come together in crowds, you are more likely to come
-                into close contact with someone that has COVID-19 and it is more
-                difficult to maintain physical distance of 2 metres (6 feet).
+                Where people come together in crowds, you are more likely to
+                come into close contact with someone that has COVID-19 and it is
+                more difficult to maintain physical distance of 2 metres (6
+                feet).
               </p>
             </article>
             <div class="icon-container">
@@ -105,8 +109,8 @@
           <li>
             <article>
               <header>
-                Stay home and self-isolate even with minor symptoms such as cough,
-                headache, mild fever, until you recover.
+                Stay home and self-isolate even with minor symptoms such as
+                cough, headache, mild fever, until you recover.
               </header>
               <p>
                 Avoiding contact with others will protect them from possible
@@ -121,11 +125,168 @@
       </article>
     </section>
 
-    <section id="stats-section"></section>
+    <section id="stats-section">
+      <article class="stats-container">
+        <header class="dropdown-container">
+          <select id="countries" name="countries">
+            <option value="volvo">GLOBAL</option>
+            <option value="saab">USA</option>
+            <option value="fiat">China</option>
+            <option value="audi">Lebanon</option>
+          </select>
+          <input type="submit" />
+        </header>
+        <article>
+          <aside class="stats">
+            <article>
+              <header>CONFIRMED</header>
+              <p>11,62,857</p>
+            </article>
 
-    <section id="faqs-section"></section>
+            <article>
+              <header>DEATHS</header>
+              <p>63,263</p>
+            </article>
 
-    <footer></footer>
+            <article>
+              <header>RECOVERED</header>
+              <p>2,30,845</p>
+            </article>
+          </aside>
+          <article></article>
+        </article>
+      </article>
+    </section>
+
+    <section id="faqs-section">
+      <article class="advice-container">
+        <ul class="advice-list">
+          <li>
+            <article>
+              <header>
+                What is Coronavirus?
+              </header>
+              <p>
+                Coronaviruses are a large family of viruses which may cause
+                illness in animals or humans. In humans, several coronaviruses
+                are known to cause respiratory infections ranging from the
+                common cold to more severe diseases such as Middle East
+                Respiratory Syndrome (MERS) and Severe Acute Respiratory
+                Syndrome (SARS). The most recently discovered coronavirus causes
+                coronavirus disease COVID-19.
+              </p>
+            </article>
+            <div class="icon-container">
+              <img src="./assets/icons/hand-wash.svg" alt="wash your hands" />
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <article>
+              <header>
+                What is Covid-19?
+              </header>
+              <p>
+                COVID-19 is the infectious disease caused by the most recently
+                discovered coronavirus. This new virus and disease were unknown
+                before the outbreak began in Wuhan, China, in December 2019.
+                COVID-19 is now a pandemic affecting many countries globally.
+              </p>
+            </article>
+            <div class="icon-container">
+              <img
+                src="./assets/icons/social-distance-2-meters.svg"
+                alt="wash your hands"
+              />
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <article>
+              <header>
+                How does Covid-19 spread?
+              </header>
+              <p>
+                People can catch COVID-19 from others who have the virus. The
+                disease spreads primarily from person to person through small
+                droplets from the nose or mouth, which are expelled when a
+                person with COVID-19 coughs, sneezes, or speaks. These droplets
+                are relatively heavy, do not travel far and quickly sink to the
+                ground. People can catch COVID-19 if they breathe in these
+                droplets from a person infected with the virus. This is why it
+                is important to stay at least 1 meter) away from others. These
+                droplets can land on objects and surfaces around the person such
+                as tables, doorknobs and handrails. People can become infected
+                by touching these objects or surfaces, then touching their eyes,
+                nose or mouth. This is why it is important to wash your hands
+                regularly with soap and water or clean with alcohol-based hand
+                rub. WHO is assessing ongoing research on the ways that COVID-19
+                is spread and will continue to share updated findings.
+              </p>
+            </article>
+            <div class="icon-container">
+              <img src="./assets/icons/crowd.svg" alt="wash your hands" />
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <article>
+              <header>
+                How can we protect others and ourselves if we don't know who is
+                infected?
+              </header>
+              <p>
+                Practicing hand and respiratory hygiene is important at ALL
+                times and is the best way to protect others and yourself. When
+                possible maintain at least a 1 meter distance between yourself
+                and others. This is especially important if you are standing by
+                someone who is coughing or sneezing. Since some infected persons
+                may not yet be exhibiting symptoms or their symptoms may be
+                mild, maintaining a physical distance with everyone is a good
+                idea if you are in an area where COVID-19 is circulating.
+              </p>
+            </article>
+            <div class="icon-container">
+              <img src="./assets/icons/stay-home.svg" alt="wash your hands" />
+            </div>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <article>
+              <header>
+                What is difference between self-isolation, self-quarantine and
+                distancing?
+              </header>
+              <p>
+                Quarantine means restricting activities or separating people who
+                are not ill themselves but may have been exposed to COVID-19.
+                The goal is to prevent spread of the disease at the time when
+                people just develop symptoms. <br />Isolation means separating
+                people who are ill with symptoms of COVID-19 and may be
+                infectious to prevent the spread of the disease. <br />
+                Physical distancing means being physically apart. WHO recommends
+                keeping at least 1-metre distance from others. This is a general
+                measure that everyone should take even if they are well with no
+                known exposure to COVID-19.
+              </p>
+            </article>
+            <div class="icon-container">
+              <img src="./assets/icons/stay-home.svg" alt="wash your hands" />
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <blockquote>Eventually, everything connects.</blockquote>
+      <div class="footer-divider"></div>
+      <p>Designed and coded by <span>Ayushman</span></p>
+      <img
+        src="./assets/icons/github-logo.svg"
+        alt="link to ayushman's github"
+      />
+    </footer>
 
     <script src="main.js"></script>
   </body>
