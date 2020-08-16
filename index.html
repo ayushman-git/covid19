@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COVID19</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav id="main">
@@ -129,27 +134,29 @@
       <article class="stats-container">
         <header class="dropdown-container">
           <select id="countries" name="countries" onchange="countrySubmit()">
-            <option value="GLOBAL">Global</option>
+            <option value="Global">Global</option>
           </select>
         </header>
-        <article>
+        <article class="country-stats">
           <aside class="stats">
             <article>
               <header>CONFIRMED</header>
-              <p>11,62,857</p>
+              <p class="selected-country-confirmed">ಠ_ಠ</p>
             </article>
 
             <article>
               <header>DEATHS</header>
-              <p>63,263</p>
+              <p class="selected-country-deaths">ಠ_ಠ</p>
             </article>
 
             <article>
               <header>RECOVERED</header>
-              <p>2,30,845</p>
+              <p class="selected-country-recovered">ಠ_ಠ</p>
             </article>
           </aside>
-          <article></article>
+          <article class="country-graph">
+            <canvas id="country-chart"></canvas>
+          </article>
         </article>
       </article>
     </section>
