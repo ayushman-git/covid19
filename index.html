@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="application-name" content="Covid19" />
+    <meta name="description" content="A informative website for Covid19." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="rating" content="General" />
     <title>COVID19</title>
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -133,9 +139,11 @@
     <section id="stats-section">
       <article class="stats-container">
         <header class="dropdown-container">
-          <select id="countries" name="countries" onchange="countrySubmit()">
-            <option value="Global">Global</option>
-          </select>
+          <label for="countries">
+            <select id="countries" name="countries" onchange="countrySubmit()">
+              <option value="Global">Global</option>
+            </select>
+          </label>
         </header>
         <article class="country-stats">
           <aside class="stats">
@@ -180,7 +188,7 @@
               </p>
             </article>
             <div class="icon-container">
-              <img src="./assets/icons/hand-wash.svg" alt="wash your hands" />
+              <img src="./assets/icons/corona.svg" alt="wash your hands" />
             </div>
           </li>
           <div class="divider"></div>
@@ -197,10 +205,7 @@
               </p>
             </article>
             <div class="icon-container">
-              <img
-                src="./assets/icons/social-distance-2-meters.svg"
-                alt="wash your hands"
-              />
+              <img src="./assets/icons/virus.svg" alt="wash your hands" />
             </div>
           </li>
           <div class="divider"></div>
@@ -228,7 +233,7 @@
               </p>
             </article>
             <div class="icon-container">
-              <img src="./assets/icons/crowd.svg" alt="wash your hands" />
+              <img src="./assets/icons/breathing.svg" alt="wash your hands" />
             </div>
           </li>
           <div class="divider"></div>
@@ -250,7 +255,7 @@
               </p>
             </article>
             <div class="icon-container">
-              <img src="./assets/icons/stay-home.svg" alt="wash your hands" />
+              <img src="./assets/icons/mask.svg" alt="wash your hands" />
             </div>
           </li>
           <div class="divider"></div>
@@ -274,7 +279,7 @@
               </p>
             </article>
             <div class="icon-container">
-              <img src="./assets/icons/stay-home.svg" alt="wash your hands" />
+              <img src="./assets/icons/quarantine.svg" alt="wash your hands" />
             </div>
           </li>
         </ul>
@@ -288,12 +293,13 @@
         Designed and coded by
         <a
           href="https://github.com/ayushman-git"
+          rel="noopener"
           target="_blank"
           class="ayushman-git"
           ><span>Ayushman</span></a
         >
       </p>
-      <a href="https://github.com/ayushman-git" target="_blank"
+      <a href="https://github.com/ayushman-git" target="_blank" rel="noopener"
         ><img
           src="./assets/icons/github-logo.svg"
           alt="link to ayushman's github"
