@@ -126,6 +126,8 @@ const graph = function (graphData) {
   });
 
   let ctx = document.getElementById("country-chart").getContext("2d");
+  ctx.width = "500px"
+  ctx.height = '300px';
   let myChart = new Chart(ctx, {
     type: "line",
     data: {

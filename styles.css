@@ -101,26 +101,6 @@ html {
   background-color: #000000;
 }
 
-.btn-bubble {
-  position: relative;
-  width: 0;
-  height: 0;
-  background-color: white;
-  animation: bubble 1s linear;
-  z-index: 2;
-}
-
-@keyframes bubble {
-  from {
-    width: 0;
-    height: 0;
-  }
-  to {
-    width: 100px;
-    height: 100px;
-  }
-}
-
 .main-footer {
   display: flex;
   justify-content: space-evenly;
@@ -212,7 +192,8 @@ html {
 .stats-container {
   padding: 0em 5em;
   display: flex;
-  flex-flow: column wrap;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
 }
 
 .dropdown-container label,
@@ -235,7 +216,8 @@ html {
 .country-stats {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 2em;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -243,10 +225,8 @@ html {
   flex: 0 1 70%;
 }
 
-#country-chart {
-}
-
-#countries {
+#countries,
+label {
   border: none;
   font-weight: 900;
   font-size: 1em;
@@ -320,7 +300,7 @@ select {
 }
 
 .footer img:hover {
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .ayushman-git {
@@ -333,4 +313,174 @@ select {
   background-color: rgb(255, 255, 255);
 }
 
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .logo {
+    font-size: 1.5em;
+    font-weight: 900;
+  }
 
+  .navbar-buttons {
+    font-size: 0.8em;
+  }
+
+  .navbar-buttons li {
+    padding: 0.2em 0.5em;
+    margin-left: 3em;
+    cursor: pointer;
+  }
+
+  .advice-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+  }
+
+  .navbar {
+    padding: 0.3em 2em;
+  }
+
+  .hero {
+    padding: 2em 2em 0 2em;
+  }
+
+  .advice-container {
+    padding: 1em 2em;
+  }
+
+  .advice-list header {
+    font-size: 0.8em;
+    font-weight: 900;
+  }
+
+  .advice-list li {
+    font-size: 1.5em;
+    line-height: 100%;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12vw;
+    height: 12vw;
+  }
+  .icon-container img {
+    width: 8vw;
+  }
+
+  .advice-list p {
+    font-size: 0.6em;
+  }
+
+  #countries {
+    font-size: 0.6em;
+  }
+
+  .stats-container {
+    padding: 0em 2em;
+  }
+
+  .stats header {
+    font-size: 1.2em;
+  }
+
+  .stats p {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 599px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    font-size: 1em;
+    font-weight: 900;
+  }
+  .advice-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+  }
+  .navbar {
+    padding: 0.3em 2em;
+  }
+
+  .hero {
+    padding: 5em 1em;
+    flex-flow: column;
+  }
+
+  .hero-msg h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 180%;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .hamburger div {
+    width: 20px;
+    height: 3px;
+    background-color: #000000;
+  }
+
+  .confirmed,
+  .recovered {
+    font-size: 0.8em;
+  }
+
+  .advice-container {
+    padding: 1em 2em;
+  }
+
+  .advice-list header {
+    font-size: 0.6em;
+    font-weight: 900;
+  }
+
+  .advice-list li {
+    line-height: 100%;
+    padding: 1em;
+  }
+
+  .advice-list p {
+    font-size: 0.5em;
+  }
+
+  .icon-container {
+    display: none;
+  }
+
+  .advice-list article {
+    flex: 0 1 100%;
+    text-align: justify;
+  }
+
+  #countries {
+    font-size: 0.6em;
+    width: 100vw;
+  }
+
+  .stats-container {
+    padding: 0em 2em;
+  }
+
+  .stats header {
+    font-size: 1.2em;
+  }
+
+  .stats p {
+    font-size: 1.5em;
+  }
+  
+  .dropdown-container label,
+  .stats header {
+    font-weight: 900;
+    font-size: 1.7em;
+  }
+
+  .footer {
+    border-radius: 55px 55px 0 0;
+  }
+}
