@@ -16,6 +16,7 @@ html {
 .logo {
   font-size: 3em;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .navbar {
@@ -482,6 +483,10 @@ select {
   .stats header {
     font-weight: 900;
     font-size: 1.7em;
+  }
+
+  .dropdown-container {
+    width: 80vw;
   }
 
   .footer {

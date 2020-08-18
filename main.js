@@ -131,7 +131,7 @@ const graph = function (graphData) {
 
   let ctx = document.getElementById("country-chart").getContext("2d");
   ctx.width = "500px";
-  ctx.height = "300px";
+  ctx.height = "500px";
   if (screen.width <= 1000) {
     ctx.width = "300px";
     ctx.height = "300px";
@@ -139,6 +139,8 @@ const graph = function (graphData) {
     ctx.width = "200px";
     ctx.height = "200px";
   }
+  Chart.defaults.global.defaultFontFamily = "Roboto";
+  Chart.defaults.global.defaultFontSize = 10;
   myChart = new Chart(ctx, {
     type: "line",
     data: {
@@ -147,7 +149,8 @@ const graph = function (graphData) {
         {
           label: "Case per day",
           data: graphObj.case,
-          borderWidth: 1,
+          borderWidth: 0,
+          backgroundColor: "rgba(74, 48, 109, 0.4)",
         },
       ],
     },
@@ -161,6 +164,15 @@ const graph = function (graphData) {
           },
         ],
       },
+      title: {
+        display: true,
+        text: 'TOTAL CASES',
+        fontSize: 24,
+        fontColor: 'black'
+      },
+      legends: {
+        display: false,
+      }
     },
   });
 };
