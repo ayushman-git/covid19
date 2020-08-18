@@ -112,7 +112,7 @@ const matchCountry = function (selectedCountry) {
       graph(graphData);
     });
 };
-
+let myChart;
 const graph = function (graphData) {
   graphObj = {
     date: [],
@@ -125,10 +125,21 @@ const graph = function (graphData) {
     graphObj.case.push(day.Cases);
   });
 
+  if (myChart) {
+    myChart.destroy();
+  }
+
   let ctx = document.getElementById("country-chart").getContext("2d");
-  ctx.width = "500px"
-  ctx.height = '300px';
-  let myChart = new Chart(ctx, {
+  ctx.width = "500px";
+  ctx.height = "300px";
+  if (screen.width <= 1000) {
+    ctx.width = "300px";
+    ctx.height = "300px";
+  } else if (screen.width <= 500) {
+    ctx.width = "200px";
+    ctx.height = "200px";
+  }
+  myChart = new Chart(ctx, {
     type: "line",
     data: {
       labels: graphObj.date,

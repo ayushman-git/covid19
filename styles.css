@@ -229,7 +229,7 @@ html {
 label {
   border: none;
   font-weight: 900;
-  font-size: 1em;
+  font-size: 0.5em;
   cursor: pointer;
 }
 
@@ -313,7 +313,7 @@ select {
   background-color: rgb(255, 255, 255);
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 1000px) {
   .logo {
     font-size: 1.5em;
     font-weight: 900;
@@ -388,7 +388,11 @@ select {
   }
 }
 
-@media only screen and (min-device-width: 1px) and (max-device-width: 599px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 500px) {
+  .navbar-buttons li {
+    padding: 0.5em;
+    margin-left: 2em;
+  }
   .logo {
     font-size: 1em;
     font-weight: 900;
@@ -459,7 +463,7 @@ select {
 
   #countries {
     font-size: 0.6em;
-    width: 100vw;
+    width: 60vw;
   }
 
   .stats-container {
@@ -473,7 +477,7 @@ select {
   .stats p {
     font-size: 1.5em;
   }
-  
+
   .dropdown-container label,
   .stats header {
     font-weight: 900;
