@@ -11,6 +11,7 @@ html {
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  color: #222222;
 }
 
 .logo {
@@ -22,7 +23,7 @@ html {
 .navbar {
   position: fixed;
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -52,12 +53,13 @@ html {
 
 .navbar-buttons li:hover {
   color: white;
-  background-color: rgb(0, 0, 0);
+  background-color: #222222;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5em 5em 0 5em;
 }
 
@@ -65,17 +67,19 @@ html {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  flex: 0 1 40%;
+  flex: 0 1 60%;
 }
 
 .hero-msg h2 {
+  color: #222222;
+  text-align: justify;
   font-size: 2.5vw;
   font-weight: 300;
   line-height: 180%;
 }
 
 .hero-img {
-  flex: 0 1 60%;
+  flex: 0 1 40%;
   display: flex;
   align-items: center;
 }
@@ -89,8 +93,8 @@ html {
   height: 55px;
   border: none;
   background-color: #ffffff;
-  border: 2px solid black;
-  color: rgb(0, 0, 0);
+  border: 2px solid #222222;
+  color: #222222;
   font-size: 1.5em;
   cursor: pointer;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -99,7 +103,7 @@ html {
 
 .advice-btn:hover {
   color: white;
-  background-color: #000000;
+  background-color: #222222;
 }
 
 .main-footer {
@@ -151,11 +155,16 @@ html {
 }
 
 .advice-list header {
+  color: #222222;
+  text-align: justify;
   font-size: 1.2em;
   font-weight: 900;
 }
 
 .advice-list p {
+  color: #424242;
+  line-height: 1.8;
+  text-align: justify;
   font-size: 0.8em;
 }
 
@@ -314,6 +323,10 @@ select {
   background-color: rgb(255, 255, 255);
 }
 
+.hero-highlight {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 1000px) {
   .logo {
     font-size: 1.5em;
@@ -416,18 +429,6 @@ select {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 180%;
-  }
-
-  .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
-  .hamburger div {
-    width: 20px;
-    height: 3px;
-    background-color: #000000;
   }
 
   .confirmed,
